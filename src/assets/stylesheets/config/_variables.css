@@ -20,7 +20,7 @@
   --color-text-primary: #4A4A4A;
   --color-text-primary-light: #90BD95;
   --color-text-secondary: #39DB4A ;
-  --color-test-secondary-light: 5FE26C;
+  --color-text-secondary-light: 5FE26C;
   --color-text-heading: #000;
 
     /* Spacing */
@@ -36,5 +36,5 @@
     --space-900: 4rem;
 
     /* colours */
-    --color-primary: 39DB4A;
+    --color-primary: #39DB4A;
 }

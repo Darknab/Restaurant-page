@@ -12,6 +12,7 @@
 html {
   overflow-y: scroll;
   height: 100%;
+  line-height: var(--line-height-body);
 }
 
 img {
@@ -28,6 +29,7 @@ h3 {
 
 h1 {
   font-size: var(--font-size-900);
+  font-weight: 900;
 }
 
 h2 {
@@ -36,6 +38,10 @@ h2 {
 
 h3 {
   font-size: var(--font-size-700);
+}
+
+p {
+  color: var(--color-text-primary)
 }
 
 a {
