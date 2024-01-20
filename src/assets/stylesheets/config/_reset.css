@@ -27,15 +27,15 @@ h3 {
 }
 
 h1 {
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-900);
 }
 
 h2 {
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-800);
 }
 
 h3 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-700);
 }
 
 a {
