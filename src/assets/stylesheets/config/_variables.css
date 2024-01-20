@@ -22,6 +22,7 @@
   --color-text-secondary: #39DB4A ;
   --color-text-secondary-light: 5FE26C;
   --color-text-heading: #000;
+  --color-text-red: #FF6868;
 
     /* Spacing */
     --space-100: 0.25rem;
@@ -37,4 +38,5 @@
 
     /* colours */
     --color-primary: #39DB4A;
+    --color-shadow: rgba(74,74,74,0.3);
 }
