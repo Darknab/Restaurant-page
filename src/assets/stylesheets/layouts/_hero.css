@@ -1,3 +1,36 @@
-#hero {
-  
+
+#hero-description {
+  flex: 1 1 45%;
+  align-self: center;
+
+  & h1 {
+    margin-bottom: var(--space-700);
+  }
+
+  & p {
+    width: 80%;
+    font-size: var(--font-size-600);
+    font-weight: 500;
+  }
 }
+
+#hero-image-container {
+  flex: 1 1 45%;
+  position: relative;
+
+}
+
+#food {
+  color: var(--color-text-secondary);
+}
+#green-background {
+  background-color: var(--color-primary);
+  z-index: -1;
+  border-radius: 50%;
+  width: 92%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  bottom: 0%;
+  left: 8%;
+}
+
