@@ -1,0 +1,47 @@
+#services {
+  margin-top: var(--space-700);
+}
+
+.services-description {
+  flex: 1 1 45%;
+  align-self: center;
+
+  & h2 {
+    max-width: 80%;
+  }
+
+  & p {
+    margin-top: var(--space-700);
+    max-width: 80%;
+  }
+}
+
+.services-cards {
+  flex: 1 1 35%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-card {
+  text-align: center;
+  padding: var(--space-500);
+  line-height: var(--line-height-cards);
+  border-radius: 15px;
+  margin: var(--space-400) var(--space-700);
+  box-shadow: var(--shadow);
+  & img {
+    margin: 0 auto;
+  }
+
+  & h3 {
+    color: var(--color-text-secondary-light);
+    font-size: var(--font-size-500);
+    margin-top: var(--space-200);
+    margin-bottom: var(--space-200);
+  }
+
+  & p {
+    color: var(--color-text-primary-light);
+    font-size: var(--font-size--200);
+  }
+}
