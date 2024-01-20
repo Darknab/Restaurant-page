@@ -1,5 +1,5 @@
 #menu {
-  margin-top: var(--space-700);
+  margin-top: var(--space-900);
 
   & .flex-container {
     justify-content: space-around;
@@ -14,7 +14,7 @@
   max-width: 250px;
   padding: var(--space-400);
   border-radius: 15px;
-  box-shadow: 5px 5px 40px 10px var(--color-shadow);
+  box-shadow: var(--shadow);
   transition: scale 200ms;
   text-wrap: pretty;
 
