@@ -1,0 +1,41 @@
+#menu {
+  margin-top: var(--space-700);
+
+  & .flex-container {
+    justify-content: space-around;
+  }
+
+  & h2 {
+    margin-bottom: var(--space-700);
+  }
+}
+
+.menu-card {
+  max-width: 250px;
+  padding: var(--space-400);
+  border-radius: 15px;
+  box-shadow: 5px 5px 40px 10px var(--color-shadow);
+  transition: scale 200ms;
+  text-wrap: pretty;
+
+  & h3 {
+    margin-top: var(--space-400);
+    margin-bottom: var(--space-400);
+  }
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+.price {
+  margin-top: auto;
+  color: var(--color-text-heading);
+  font-weight: 600;
+  font-size: var(--font-size-600);
+
+  & span {
+    font-size: var(--font-size-400);
+    color: var(--color-text-red);
+  }
+}
