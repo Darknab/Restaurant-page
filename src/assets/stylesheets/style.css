@@ -3,4 +3,10 @@
 @import "config/_variables.css";
 
 /* Layouts */
+@import "layouts/_flex_container.css";
+@import "layouts/_content";
 @import "layouts/_header.css";
+@import "layouts/_hero.css";
+@import "layouts/_menu.css";
+@import "layouts/_services.css";
+@import "layouts/_footer.css";
