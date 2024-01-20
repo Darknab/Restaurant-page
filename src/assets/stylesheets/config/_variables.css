@@ -5,6 +5,7 @@
   /* Line heights */
   --line-height-headers: 1.1;
   --line-height-body: 1.5;
+  --line-height-cards: 0.9;
 
   /* Font sizes */
   --font-size-100: 0.75rem;  
@@ -20,7 +21,7 @@
   --color-text-primary: #4A4A4A;
   --color-text-primary-light: #90BD95;
   --color-text-secondary: #39DB4A ;
-  --color-text-secondary-light: 5FE26C;
+  --color-text-secondary-light: #5FE26C;
   --color-text-heading: #000;
   --color-text-red: #FF6868;
 
@@ -39,4 +40,8 @@
     /* colours */
     --color-primary: #39DB4A;
     --color-shadow: rgba(74,74,74,0.3);
+
+    /* shadow */
+    --shadow: 5px 5px 40px 5px var(--color-shadow);
+
 }
