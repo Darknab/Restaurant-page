@@ -49,3 +49,7 @@ a {
     color: var(--color-text-secondary);
   }
 }
+
+li {
+  list-style-type: none;
+}
