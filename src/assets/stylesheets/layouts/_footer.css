@@ -1,0 +1,25 @@
+#footer,
+#credentials {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: var(--space-700);
+}
+
+#footer p {
+  align-self: center;
+  max-width: 60%;
+  margin-right: 25%;
+}
+
+.footer-title {
+  font-size: var(--font-size-500);
+}
+
+.footer-title, 
+.footer-list li {
+  margin-bottom: var(--space-500);
+}
+
+#credentials {
+  text-align: center;
+}
