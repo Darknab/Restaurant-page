@@ -1,0 +1,9 @@
+#header {
+  margin-top: 2em;
+}
+
+#header ul {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}

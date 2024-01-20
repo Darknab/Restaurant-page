@@ -1,2 +1,6 @@
+/* config */
 @import "config/_reset.css";
 @import "config/_variables.css";
+
+/* Layouts */
+@import "layouts/_header.css";
