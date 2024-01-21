@@ -226,7 +226,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _src_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/header */ \"./src/header.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero */ \"./src/hero.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\n\nconst content = document.createElement('div');\ncontent.id = 'content';\n\ndocument.body.appendChild(_src_header__WEBPACK_IMPORTED_MODULE_1__.header);\ndocument.body.appendChild(content);\ncontent.appendChild(_hero__WEBPACK_IMPORTED_MODULE_2__.hero);\ncontent.appendChild(_menu__WEBPACK_IMPORTED_MODULE_3__.menu);\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _src_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/header */ \"./src/header.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero */ \"./src/hero.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services */ \"./src/services.js\");\n\n\n\n\n\n\nconst content = document.createElement('div');\ncontent.id = 'content';\n\ndocument.body.appendChild(_src_header__WEBPACK_IMPORTED_MODULE_1__.header);\ndocument.body.appendChild(content);\ncontent.appendChild(_hero__WEBPACK_IMPORTED_MODULE_2__.hero);\ncontent.appendChild(_menu__WEBPACK_IMPORTED_MODULE_3__.menu);\ncontent.appendChild(_services__WEBPACK_IMPORTED_MODULE_4__.services);\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -237,6 +237,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   menu: () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _src_assets_images_Fattoush_salad_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/images/Fattoush-salad.png */ \"./src/assets/images/Fattoush-salad.png\");\n/* harmony import */ var _src_assets_images_Vegetable_salad_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/assets/images/Vegetable-salad.png */ \"./src/assets/images/Vegetable-salad.png\");\n/* harmony import */ var _src_assets_images_Egg_salad_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/assets/images/Egg-salad.png */ \"./src/assets/images/Egg-salad.png\");\n\n\n\n\nconst menu = document.createElement('div');\nmenu.id = 'menu';\n\nconst menuTitle = document.createElement('h2');\nmenuTitle.textContent = 'Standout dishes from our menu';\n\nconst flexContainer = document.createElement('div');\nflexContainer.classList.add('flex-container');\n\nclass Dish {\n  constructor(image, title, description, price){\n    this.image = image;\n    this.title = title;\n    this.description = description;\n    this.price = price;\n  }\n}\n\nconst fattoush = new Dish;\nfattoush.image = _src_assets_images_Fattoush_salad_png__WEBPACK_IMPORTED_MODULE_0__;\nfattoush.title = 'Fattoush salad';\nfattoush.description = 'Fattoush salad is a vibrant and refreshing Middle Eastern dish that features a colorful medley of crisp vegetables, Fattoush is not only visually appealing but also offers a lightand satisfying combination of textures and tastes.';\nfattoush.price = '24.00';\n\nconst vegetable = new Dish;\nvegetable.image = _src_assets_images_Vegetable_salad_png__WEBPACK_IMPORTED_MODULE_1__;\nvegetable.title = 'Vegetable salad';\nvegetable.description = 'A classic vegetable salad is a wholesome medleyof fresh, raw vegetables, offering a burst of colors, flavors, and nutrients.It includes crisp lettuce or mixed greens, juicy tomatoes, crunchy cucumbers, vibrant bell peppers, and slices of red onion.';\nvegetable.price = '26.00';\n\nconst egg = new Dish;\negg.image = _src_assets_images_Egg_salad_png__WEBPACK_IMPORTED_MODULE_2__;\negg.title = 'Egg salad';\negg.description = \"Egg salad is a delightful and creamy dish made by combining hard-boiled eggs with a savory dressing. It's a simple yet satisfying dish that showcases the natural goodness of eggs with a delicious blend of complementary flavors.\";\negg.price = '23.00';\n\nconst dishes = [fattoush, vegetable, egg];\n\ndishes.forEach(dish => {\n  const menuCard = document.createElement('div');\n  menuCard.classList.add('menu-card');\n\n  const img = new Image();\n  img.src = dish.image;\n\n  const dishTitle = document.createElement('h3');\n  dishTitle.classList = 'dish-title';\n  dishTitle.textContent = dish.title;\n\n  const dishDescription = document.createElement('p');\n  dishDescription.classList.add('dish-description');\n  dishDescription.textContent = dish.description;\n\n  const dishPrice = document.createElement('p');\n  dishPrice.classList.add('price');\n  const dollar = document.createElement('span');\n  dollar.textContent = '$';\n  dishPrice.textContent = dish.price;\n  dishPrice.prepend(dollar);\n\n  menuCard.append(img, dishTitle, dishDescription, dishPrice);\n\n  flexContainer.appendChild(menuCard);\n});\n\nmenu.append(menuTitle, flexContainer);\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/services.js":
+/*!*************************!*\
+  !*** ./src/services.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   services: () => (/* binding */ services)\n/* harmony export */ });\n/* harmony import */ var _src_assets_images_fi_rr_salad_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/images/fi-rr-salad.png */ \"./src/assets/images/fi-rr-salad.png\");\n/* harmony import */ var _src_assets_images_fi_rr_time_fast_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/assets/images/fi-rr-time-fast.png */ \"./src/assets/images/fi-rr-time-fast.png\");\n/* harmony import */ var _src_assets_images_fi_rr_shopping_cart_check_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/assets/images/fi-rr-shopping-cart-check.png */ \"./src/assets/images/fi-rr-shopping-cart-check.png\");\n/* harmony import */ var _src_assets_images_fi_rr_gift_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/assets/images/fi-rr-gift.png */ \"./src/assets/images/fi-rr-gift.png\");\n\n\n\n\n\nconst services = document.createElement('div');\nservices.id = 'services';\nservices.classList.add('flex-container');\n\nconst servicesDescription = document.createElement('div');\nservicesDescription.classList = 'services-description';\n\nconst descriptionTitle = document.createElement('h2');\ndescriptionTitle.textContent = 'Our culinary journey and services';\n\nconst descriptionText = document.createElement('p');\ndescriptionText.textContent = 'Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.';\n\nservicesDescription.append(descriptionTitle, descriptionText);\n\nconst servicesCards = document.createElement('div');\nservicesCards.classList.add('services-cards');\n\nclass Card {\n  constructor(image, title, description) {\n    this.image = image;\n    this.title = title;\n    this.description = description;\n  }\n}\n\nconst catering = new Card;\ncatering.image = _src_assets_images_fi_rr_salad_png__WEBPACK_IMPORTED_MODULE_0__;\ncatering.title = 'Catering';\ncatering.description = 'Delight your guest with our flavours and presentation';\n\nconst delivery = new Card;\ndelivery.image = _src_assets_images_fi_rr_time_fast_png__WEBPACK_IMPORTED_MODULE_1__;\ndelivery.title = 'Fast delivery';\ndelivery.description = 'We deliver your order promptly to your door';\n\nconst ordering = new Card;\nordering.image = _src_assets_images_fi_rr_shopping_cart_check_png__WEBPACK_IMPORTED_MODULE_2__;\nordering.title = 'Online ordering';\nordering.description = 'Explore menu & order with ease using our online ordering';\n\nconst giftCard = new Card;\ngiftCard.image = _src_assets_images_fi_rr_gift_png__WEBPACK_IMPORTED_MODULE_3__;\ngiftCard.title = 'Gift Cards';\ngiftCard.description = 'Give the gift of exceptional dining with our gift cards';\n\nconst cards = [catering, delivery, ordering, giftCard];\n\ncards.forEach(element => {\n  const servicesCard = document.createElement('div');\n  servicesCard.classList.add('services-card');\n\n  const cardImage = new Image();\n  cardImage.src = element.image;\n\n  const cardTitle = document.createElement('h3');\n  cardTitle.classList.add('services-title');\n  cardTitle.textContent = element.title;\n\n  const cardDescription = document.createElement('p');\n  cardDescription.classList.add('services-description');\n  cardDescription.textContent = element.description;\n\n  servicesCard.append(cardImage, cardTitle, cardDescription);\n\n  servicesCards.appendChild(servicesCard);\n});\n\nservices.append(servicesDescription, servicesCards);\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/services.js?");
 
 /***/ }),
 
@@ -277,6 +287,46 @@ eval("module.exports = __webpack_require__.p + \"b91f29a80eae3685b23d.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"953d5f409bc5f975e007.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/Vegetable-salad.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/fi-rr-gift.png":
+/*!******************************************!*\
+  !*** ./src/assets/images/fi-rr-gift.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b2e14cc6839cb679ad5c.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/fi-rr-gift.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/fi-rr-salad.png":
+/*!*******************************************!*\
+  !*** ./src/assets/images/fi-rr-salad.png ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c1605105f34e14c2d33c.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/fi-rr-salad.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/fi-rr-shopping-cart-check.png":
+/*!*********************************************************!*\
+  !*** ./src/assets/images/fi-rr-shopping-cart-check.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"657d21b6f25aa27c0ceb.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/fi-rr-shopping-cart-check.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/fi-rr-time-fast.png":
+/*!***********************************************!*\
+  !*** ./src/assets/images/fi-rr-time-fast.png ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"cc68b260b5952882f100.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/fi-rr-time-fast.png?");
 
 /***/ })
 
