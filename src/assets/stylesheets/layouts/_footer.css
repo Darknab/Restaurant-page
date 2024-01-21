@@ -5,10 +5,21 @@
   margin-top: var(--space-900);
 }
 
-#footer p {
+#footer.flex-container {
+  justify-content: space-between;
+}
+
+.footer-text {
   align-self: center;
-  max-width: 60%;
-  margin-right: 25%;
+  flex: 2 1;
+
+  & p {
+    max-width: 300px;
+  }
+}
+
+.footer-menu {
+  flex: 1 1;
 }
 
 .footer-title {
