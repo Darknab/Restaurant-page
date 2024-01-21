@@ -200,6 +200,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   footer: () => (/* binding */ footer)\n/* harmony export */ });\nconst footer = document.createElement('div');\nfooter.id = 'footer';\nfooter.classList.add('flex-container');\n\nconst footerText = document.createElement('div');\nfooter.classList.add('footer-text');\n\nconst footerPara = document.createElement('p');\nfooterPara.textContent = 'Savor the artistry where ervery dish is a culinary masterpiece';\n\nfooterText.appendChild(footerPara);\n\nfooter.appendChild(footerText);\n\nclass Menu {\n  constructor(title, list) {\n    this.title = title;\n    this.list = list;\n  }\n}\n\nconst usefulLinks = new Menu;\nusefulLinks.title = 'Useful links';\nusefulLinks.list = ['About us', 'Events', 'Blogs', 'FAQ'];\n\nconst mainMenu = new Menu;\nmainMenu.title = 'Main menu';\nmainMenu.list = ['Home', 'Offers', 'Menus', 'Reservation'];\n\nconst contactUs = new Menu;\ncontactUs.title = 'Contact us';\ncontactUs.list = ['example@email.com', '+111 555 55 555', 'Social Media'];\n\nconst menus = [usefulLinks, mainMenu, contactUs];\n\nmenus.forEach(element => {\n  const footerMenu = document.createElement('div');\n  footerMenu.classList.add('footer-menu');\n\n  const footerTitle = document.createElement('h3');\n  footerTitle.classList.add('footer-title');\n  footerTitle.textContent = element.title;\n\n  const footerList = document.createElement('ul');\n  footerList.classList.add('footer-list');\n\n  element.list.forEach(link => {\n    const li = document.createElement('li');\n\n    const a = document.createElement('a');\n    a.href = '#';\n    a.textContent = link;\n\n    li.appendChild(a);\n    footerList.appendChild(li);\n  })\n\n  footer.appendChild(footerList);\n});\n\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -226,7 +236,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _src_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/header */ \"./src/header.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero */ \"./src/hero.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services */ \"./src/services.js\");\n\n\n\n\n\n\nconst content = document.createElement('div');\ncontent.id = 'content';\n\ndocument.body.appendChild(_src_header__WEBPACK_IMPORTED_MODULE_1__.header);\ndocument.body.appendChild(content);\ncontent.appendChild(_hero__WEBPACK_IMPORTED_MODULE_2__.hero);\ncontent.appendChild(_menu__WEBPACK_IMPORTED_MODULE_3__.menu);\ncontent.appendChild(_services__WEBPACK_IMPORTED_MODULE_4__.services);\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _src_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/header */ \"./src/header.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero */ \"./src/hero.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services */ \"./src/services.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\n\n\n\nconst content = document.createElement('div');\ncontent.id = 'content';\n\ndocument.body.appendChild(_src_header__WEBPACK_IMPORTED_MODULE_1__.header);\ndocument.body.appendChild(content);\ncontent.appendChild(_hero__WEBPACK_IMPORTED_MODULE_2__.hero);\ncontent.appendChild(_menu__WEBPACK_IMPORTED_MODULE_3__.menu);\ncontent.appendChild(_services__WEBPACK_IMPORTED_MODULE_4__.services);\ndocument.body.appendChild(_footer__WEBPACK_IMPORTED_MODULE_5__.footer);\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
