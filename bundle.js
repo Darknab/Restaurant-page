@@ -200,13 +200,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   displayHeader: () => (/* binding */ displayHeader)\n/* harmony export */ });\nfunction displayHeader() {\n  const header = document.createElement('div');\n  header.id = 'header';\n\n  const list = document.createElement('ul');\n\n  const home = document.createElement('li');\n  home.innerHTML = \"<a href=\\\"#\\\">Home</a>\"\n\n  const menu = document.createElement('li');\n  menu.innerHTML = \"<a href=\\\"#\\\">Menu</a>\";\n\n  const services = document.createElement('li');\n  services.innerHTML = \"<a href=\\\"#\\\">Services</a>\";\n\n  list.append(home, menu, services);\n\n  header.appendChild(list);\n\n  document.body.appendChild(header);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _src_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/header */ \"./src/header.js\");\n\n\n\n(0,_src_header__WEBPACK_IMPORTED_MODULE_1__.displayHeader)();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 
