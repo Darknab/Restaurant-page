@@ -210,13 +210,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/hero.js":
+/*!*********************!*\
+  !*** ./src/hero.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   hero: () => (/* binding */ hero)\n/* harmony export */ });\n/* harmony import */ var _src_assets_images_Intersect_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/images/Intersect.png */ \"./src/assets/images/Intersect.png\");\n\n\n\n  const hero = document.createElement('div');\n  hero.id = 'hero';\n  hero.classList.add('flex-container');\n\n  const heroDescription = document.createElement('div');\n  heroDescription.id = 'hero-description';\n\n  const title = document.createElement('h1');\n  title.textContent = 'Dive into delights of delectable ';\n  const food = document.createElement('span');\n  food.id = 'food';\n  food.textContent = 'food';\n  title.appendChild(food);\n\n  const heroText = document.createElement('p');\n  heroText.textContent = 'Where each plate weaves a story of culinary mastery and passionate craftsmanship';\n\n  heroDescription.append(title, heroText);\n\n  const heroImageContainer = document.createElement('div');\n  heroImageContainer.id = 'hero-image-container';\n\n  const heroImage = new Image();\n  heroImage.src = _src_assets_images_Intersect_png__WEBPACK_IMPORTED_MODULE_0__;\n  heroImage.alt = \"a woman who delights in the scents of the dishes she holds in her hands\";\n\n  const heroGreenBackground = document.createElement('div');\n  heroGreenBackground.id = 'green-background';\n\n  heroImageContainer.append(heroImage, heroGreenBackground);\n\n  hero.append(heroDescription, heroImageContainer);\n\n  \n\n\n//# sourceURL=webpack://restaurant-page/./src/hero.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _src_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/header */ \"./src/header.js\");\n\n\n\n(0,_src_header__WEBPACK_IMPORTED_MODULE_1__.displayHeader)();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/assets/stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _src_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/header */ \"./src/header.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero */ \"./src/hero.js\");\n\n\n\n\nconst content = document.createElement('div');\ncontent.id = 'content';\n\n(0,_src_header__WEBPACK_IMPORTED_MODULE_1__.displayHeader)();\ndocument.body.appendChild(content);\ncontent.appendChild(_hero__WEBPACK_IMPORTED_MODULE_2__.hero);\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/images/Intersect.png":
+/*!*****************************************!*\
+  !*** ./src/assets/images/Intersect.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b91f29a80eae3685b23d.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/Intersect.png?");
 
 /***/ })
 
@@ -271,6 +291,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -285,6 +317,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
