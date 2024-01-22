@@ -1,20 +1,20 @@
 const header = document.createElement('div');
 header.id = 'header';
 
-const list = document.createElement('ul');
+const homeBtn = document.createElement('button');
+homeBtn.id = 'home-btn';
+homeBtn.classList.add('active');
+homeBtn.textContent = 'Home';
 
-const home = document.createElement('li');
-home.innerHTML = "<a href=\"#\">Home</a>"
+const menuBtn = document.createElement('button');
+menuBtn.id = 'menu-btn';
+menuBtn.textContent = 'Menu';
 
-const menu = document.createElement('li');
-menu.innerHTML = "<a href=\"#\">Menu</a>";
+const servicesBtn = document.createElement('button');
+servicesBtn.id = 'services-btn';
+servicesBtn.textContent = 'Services';
 
-const services = document.createElement('li');
-services.innerHTML = "<a href=\"#\">Services</a>";
-
-list.append(home, menu, services);
-
-header.appendChild(list);
+header.append(homeBtn, menuBtn, servicesBtn);
 
 export { header };
 
