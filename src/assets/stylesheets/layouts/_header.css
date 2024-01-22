@@ -1,9 +1,46 @@
 #header {
-  margin-top: var(--space-700);
-}
-
-#header ul {
+  padding-top: var(--space-700);
   display: flex;
   gap: 2em;
   justify-content: center;
+  background-color: var(--color-primary);
+  
+}
+
+button {
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary) ;
+  font-size: var(--font-size-600);
+  background-color: transparent;
+  padding: var(--space-500) var(--space-700);
+  border-color: transparent;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  transition: all 200ms ease-in-out;
+}
+
+.active {
+  background-color: white;
+}
+
+.active::before,
+.active::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  bottom: -1px;
+  background-color: var(--color-primary);
+}
+
+.active::before {
+  left: -14%;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 15px 0 0 white;
+}
+
+.active::after {
+  right: -14%;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 15px 0 0 white;
 }
