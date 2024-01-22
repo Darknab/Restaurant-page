@@ -5,12 +5,12 @@ import { menu } from './menu';
 import { services } from './services';
 import { footer, credentials } from './footer';
 
-const content = document.createElement('div');
-content.id = 'content';
+const content = document.querySelector('#content');
 
-document.body.appendChild(header);
-document.body.appendChild(content);
+document.body.prepend(header);
+
 content.appendChild(hero);
 content.appendChild(menu);
 content.appendChild(services);
+
 document.body.append(footer, credentials);
