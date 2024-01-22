@@ -58,5 +58,35 @@ menus.forEach(element => {
   footer.appendChild(footerList);
 });
 
+const credentials = document.createElement('div');
+credentials.id = 'credentials';
 
-export { footer };
+const darknab = document.createElement('p');
+const darknabGithub = document.createElement('a');
+darknabGithub.href = 'https://github.com/Darknab';
+darknabGithub.textContent = 'Nabil Negadi';
+
+const theOdinProject = document.createElement('a');
+theOdinProject.href = 'https://www.theodinproject.com/lessons/javascript-restaurant-page';
+theOdinProject.textContent = 'The Odin Project';
+
+const span = document.createElement('span');
+span.textContent = ' for ';
+
+darknab.textContent = 'Made by ';
+darknab.append(darknabGithub, span, theOdinProject);
+
+credentials.appendChild(darknab);
+
+const design = document.createElement('p');
+const dsCode = document.createElement('a');
+dsCode.href = "https://www.figma.com/community/file/1277277072882405551";
+dsCode.textContent = "DS code";
+
+design.textContent = "Design inspired (shamelessly copied) from ";
+design.appendChild(dsCode);
+
+credentials.appendChild(design);
+
+
+export { footer, credentials };
