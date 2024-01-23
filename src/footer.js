@@ -3,7 +3,7 @@ footer.id = 'footer';
 footer.classList.add('flex-container');
 
 const footerText = document.createElement('div');
-footer.classList.add('footer-text');
+footerText.classList.add('footer-text');
 
 const footerPara = document.createElement('p');
 footerPara.textContent = 'Savor the artistry where ervery dish is a culinary masterpiece';
@@ -44,6 +44,8 @@ menus.forEach(element => {
   const footerList = document.createElement('ul');
   footerList.classList.add('footer-list');
 
+  footerList.appendChild(footerTitle);
+  
   element.list.forEach(link => {
     const li = document.createElement('li');
 
