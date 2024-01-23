@@ -1,13 +1,9 @@
-#menu {
-  margin-top: var(--space-900);
+#menu .flex-container {
+  justify-content: space-around;
+}
 
-  & .flex-container {
-    justify-content: space-around;
-  }
-
-  & h2 {
-    margin-bottom: var(--space-700);
-  }
+#menu h2 {
+  margin-bottom: var(--space-700);
 }
 
 .menu-card {
