@@ -45,3 +45,15 @@
     font-size: var(--font-size--200);
   }
 }
+
+@media (max-width: 750px) {
+  .services-description {
+    text-align: center;
+
+    & h2,
+    & p {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+}

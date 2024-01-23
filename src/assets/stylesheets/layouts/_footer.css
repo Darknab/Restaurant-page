@@ -33,3 +33,14 @@
 #credentials {
   text-align: center;
 }
+
+@media (max-width: 750px) {
+  #footer {
+    text-align: center;
+  }
+
+  .footer-text {
+    display: inline-block;
+    margin: 0 auto var(--space-700) auto;
+  }
+}

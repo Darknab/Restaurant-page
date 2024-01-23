@@ -34,3 +34,14 @@
   left: 8%;
 }
 
+@media (max-width: 750px) {
+  #hero-description {
+    text-align: center;
+
+    & p {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+}
+

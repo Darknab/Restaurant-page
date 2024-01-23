@@ -35,3 +35,12 @@
     color: var(--color-text-red);
   }
 }
+
+@media (max-width: 750px) {
+  #menu h2 {
+    text-align: center;
+  }
+  .menu-card {
+    margin: 0 auto var(--space-700) auto;
+  }
+}
