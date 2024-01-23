@@ -67,10 +67,12 @@ const darknab = document.createElement('p');
 const darknabGithub = document.createElement('a');
 darknabGithub.href = 'https://github.com/Darknab';
 darknabGithub.textContent = 'Nabil Negadi';
+darknabGithub.target = "_blank";
 
 const theOdinProject = document.createElement('a');
 theOdinProject.href = 'https://www.theodinproject.com/lessons/javascript-restaurant-page';
 theOdinProject.textContent = 'The Odin Project';
+theOdinProject.target = "_blank";
 
 const span = document.createElement('span');
 span.textContent = ' for ';
@@ -84,6 +86,7 @@ const design = document.createElement('p');
 const dsCode = document.createElement('a');
 dsCode.href = "https://www.figma.com/community/file/1277277072882405551";
 dsCode.textContent = "DS code";
+dsCode.target = "_blank";
 
 design.textContent = "Design inspired (shamelessly copied) from ";
 design.appendChild(dsCode);
