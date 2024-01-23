@@ -1,5 +1,5 @@
 #header {
-  padding-top: var(--space-700);
+  padding-top: var(--space-300);
   display: flex;
   gap: 2em;
   justify-content: center;
@@ -17,6 +17,7 @@ button {
   position: relative;
   border-radius: 15px 15px 0 0;
   transition: all 200ms ease-in-out;
+  width: 130px;
 }
 
 .active {
@@ -34,13 +35,13 @@ button {
 }
 
 .active::before {
-  left: -14%;
+  left: -13%;
   border-bottom-right-radius: 15px;
   box-shadow: 0 15px 0 0 white;
 }
 
 .active::after {
-  right: -14%;
+  right: -13%;
   border-bottom-left-radius: 15px;
   box-shadow: 0 15px 0 0 white;
 }
