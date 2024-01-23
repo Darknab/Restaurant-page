@@ -11,7 +11,6 @@
 
 .footer-text {
   align-self: center;
-  flex: 2 1;
 
   & p {
     max-width: 300px;
